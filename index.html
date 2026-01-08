@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Football Teams Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 id="main-title">⚽ Football Teams Finder ⚽</h1>
+<h2 id="fav-title">⭐ Your Favourite Team ⭐</h2>
+
+<p id="favouriteTeam">No favourite selected</p>
+
+
+<select id="leagueFilter">
+    <option value="all">All Leagues</option>
+    <option value="Premier League">Premier League</option>
+    <option value="La Liga">La Liga</option>
+    <option value="Serie A">Serie A</option>
+    <option value="Bundesliga">Bundesliga</option>
+</select>
+
+<select id="sortStanding">
+    <option value="default">Sort by Standing</option>
+    <option value="asc">Best to Worst</option>
+</select>
+<br><br>
+
+<input
+    type="text"
+    id="searchInput"
+    placeholder="Search your favourite team..."
+    class="search-box"
+/>
+
+
+<div id="hero">
+    <h1 class="animate-text">Find Your Favourite Football Team ⚽</h1>
+    <p>Search, filter and explore teams from top leagues</p>
+</div>
+<div class="app-container">
+    <!-- your content -->
+</div>
+
+
+<div id="teams" class="teams-container"></div>
+
+<!-- Team Detail Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="close">&times;</span>
+        <h2 id="teamName"></h2>
+        <p><strong>League:</strong> <span id="teamLeague"></span></p>
+        <p><strong>Standing:</strong> <span id="teamStanding"></span></p>
+
+        <h3>Players</h3>
+        <ul id="players"></ul>
+
+        <button id="favBtn">⭐ Save as Favourite</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+/* ================= GLOBAL ================= */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+    background-image: url("https://i.imgur.com/lvKyY7V.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Dark overlay for better contrast */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
+}
+
+/* ================= HERO ================= */
+#hero {
+    margin-top: 80px;
+    color: white;
+}
+
+#hero h1 {
+    margin: 20px 0;
+    color: white;
+}
+
+#hero p {
+    color: #eaeaea;
+}
+
+/* ================= SEARCH ================= */
+.search-box {
+    padding: 10px;
+    width: 260px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: none;
+
+    background: white;
+    color: black;
+}
+
+.search-box::placeholder {
+    color: #666;
+}
+
+/* ================= FILTER ================= */
+select {
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+/* ================= APP CONTAINER ================= */
+.app-container {
+    background: rgba(255, 255, 255, 0.92);
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 14px;
+}
+
+/* ================= TEAMS ================= */
+.teams-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    width: 180px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+}
+
+.favourite {
+    border: 2px solid gold;
+    background-color: #fffbe6;
+}
+
+/* ================= MODAL ================= */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background: white;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ================= BUTTON ================= */
+button {
+    margin-top: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* ================= ANIMATION ================= */
+.animate-text {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#main-title {
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 800;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+
+#fav-title {
+    color: #ffd700; /* gold */
+    font-size: 26px;
+    font-weight: 700;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
+}
+
+
+#favouriteTeam {
+    color: gold;
+    font-weight: bold;
+    font-size: 22px;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
